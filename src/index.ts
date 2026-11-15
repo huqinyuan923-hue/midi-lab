@@ -1,0 +1,10 @@
+// midi-lab 公共入口：SMF 解析/序列化 + 合成器 + 播放器
+export type { MidiEvent, ParsedSmf, SmpteDivision } from './smf/types'
+export { parseSmf } from './smf/parser'
+export { serializeSmf } from './smf/serializer'
+export { Synth } from './synth/synth'
+export { Player } from './player'
+export { envelopeValueAt } from './synth/synth'
+export { midiKeyToFreq, waveCoefficients, type WaveType } from './synth/waves'
+export { lowpassCoeffs, highpassCoeffs, biquadResponse, type BiquadCoeffs } from './synth/biquad'
+export { presetForProgram, type Preset } from './synth/presets'
